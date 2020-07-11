@@ -130,3 +130,55 @@ nav .profile-link a {
 .main-section-button button a {
     font-weight: 700;
 }
+
+
+/********************** Blogs ************************/
+
+.notices {
+    border: 1px solid #E6E9ED;
+    display: grid;
+    grid-template: 40px 450px / 780px 600px;
+    grid-template-areas: "title title"
+                         "notices-img notices-info";
+    justify-content: center;
+    background-color: #E6E9ED;
+}
+
+.notices-title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    margin-left: 113px;
+    margin-top: 40px;
+}
+
+.notices-img {
+    grid-area: notices-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.notices-info {
+    grid-area: notices-info;
+    margin-top: 50px;
+}
+
+.notices-img img {
+    width: 550px;
+    margin-right: 0;
+}
+
+.notices-info button {
+    background-color: #E6E9ED;
+    border: 1px solid #47CFAC;
+    width: 90px;
+    height: 37px;
+    margin-top: 16px;
+}
+
+.notices-info button a {
+    cursor: pointer;
+    text-align: center;
+}
