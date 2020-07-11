@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +8,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 a {
@@ -69,4 +74,55 @@ nav .nav-logo-container img{
 nav .profile-link a {
     color: black;
     border-bottom: 1px solid black;
+}
+
+.section {
+    background-image: url('/assets/img/Cover.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    height: 100%;
+    margin: 0;
+    background-color: #161616;
+    background-image: url(/assets/img/Cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -1;
+}
+
+.main-section {
+    display: grid;
+    grid-template: repeat(2, 270px) / 1fr 4fr 1fr;
+    grid-template-areas: ". info ."
+                        ". button .";
+}
+
+.main-section-info {
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    letter-spacing: 12px;
+    text-align: center;
+    color: white;
+}
+
+.main-section-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.main-section-button button{
+    background-color: #47CFAC;
+    border: none;
+    width: 140px;
+    height: 45px;
+    font-size: 1.2em;
 }
