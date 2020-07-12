@@ -3,11 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -165,6 +160,10 @@ nav .profile-link a {
     margin-top: 50px;
 }
 
+.notices-info h2{
+    font-size: 2.3em;
+}
+
 .notices-img img {
     width: 550px;
     margin-right: 0;
@@ -181,4 +180,46 @@ nav .profile-link a {
 .notices-info button a {
     cursor: pointer;
     text-align: center;
+}
+
+.blogs-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.blogs {
+    display: grid;
+    grid-template: repeat(2, 450px) / repeat(3, 450px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.blogs-container {
+    margin-bottom: 30px;
+}
+
+.blogs-container:nth-of-type(4),
+.blogs-container:nth-of-type(5),
+.blogs-container:nth-of-type(6) {
+    margin-top: 40px;
+}
+
+.blogs-img {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.blogs-img img {
+    width: 100%;
+}
+
+.blogs-info button {
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid #47CFAC;
+    width: 140px;
+    height: 50px;
+    font-size: 1.2em;
 }
