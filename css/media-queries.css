@@ -85,6 +85,20 @@
         grid-template-columns: 130px 200px;
         justify-content: center;
     }
+
+    .projects-section {
+        grid-template-columns: repeat(3, 250px);
+        font-size: 1em;
+    }
+
+    .projects-section-container h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-section-container p {
+        letter-spacing: .2px;
+    }
 }
 
 @media (max-width: 550px) {
