@@ -201,6 +201,7 @@ nav .profile-link a {
     grid-template: repeat(2, 450px) / repeat(3, 450px);
     justify-content: center;
     gap: 25px;
+    margin-bottom: 100px;
 }
 
 .blogs-container {
@@ -229,6 +230,10 @@ nav .profile-link a {
     width: 110px;
     height: 40px;
     font-size: 1em;
+}
+
+.blogs-info-button {
+
 }
 
 .blogs-info button:hover{
